@@ -1,0 +1,19 @@
+.mButton {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid;
+  padding: 14px 24px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  color: #fff;
+  border-color: #4262ff;
+  background-color: #4262ff;
+}
