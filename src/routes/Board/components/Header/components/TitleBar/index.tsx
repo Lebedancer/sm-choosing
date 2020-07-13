@@ -1,30 +1,30 @@
 import React from "react";
 import Button from "../../../../../../components/Button";
-import titleBarStore from "../../../../../../stores/titleBarStore";
+import titleBarStore from "./titleBarStore";
+import {observer} from "mobx-react";
 import "./style.css"
+import BoardTitleModal from "../../../../../../components/BoardTitleModal";
 
 class Index extends React.Component<any> {
-    private store: any;
-
-    constructor(props: any) {
-        super(props)
-
-        this.store = titleBarStore;
-    }
-
     render() {
-        const { canShowShareButton } = this.store;
+        const {canShowShareButton, boardTitle, isDialogVisible } = titleBarStore;
 
-        return <div className="titleBar">
-            <a href="#grid">
-                <h1>Miro</h1>
-            </a>
-            <a href="#">
-                <h1>board name</h1>
-            </a>
-            { canShowShareButton && <Button>Share</Button> }
-        </div>
+        return <React.Fragment>
+            <div className="titleBar">
+                <a href="#grid">
+                    <h1>Miro</h1>
+                </a>
+                <button onClick={() => titleBarStore.showModal()}>
+                    <h1>{boardTitle}</h1>
+                </button>
+                {canShowShareButton && <Button>Share</Button>}
+            </div>
+            {isDialogVisible && <BoardTitleModal
+                onClose={() => titleBarStore.hideModal()}
+                isVisible
+            />}
+        </React.Fragment>
     };
 }
 
-export default Index;
+export default observer(Index);
