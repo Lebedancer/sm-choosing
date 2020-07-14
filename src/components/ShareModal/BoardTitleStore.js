@@ -3,14 +3,11 @@ import boardDataStore from '../../stores/boardDataStore';
 
 export class BoardTitleStore {
   @observable title = boardDataStore.boardName;
-  @observable isDeleteDialogShown = false;
 
   constructor() {
     observe(boardDataStore, change => {
     })
   }
-
-
 
   @action onChangeTitle(value) {
     this.title = value;
@@ -20,14 +17,6 @@ export class BoardTitleStore {
     boardDataStore.onChangeTitle({
       title: this.title
     })
-  }
-
-  @action showDeleteDialog() {
-    this.isDeleteDialogShown = true;
-  }
-
-  @action hideDeleteDialog() {
-    this.isDeleteDialogShown = false
   }
 }
 

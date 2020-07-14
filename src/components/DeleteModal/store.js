@@ -1,16 +1,13 @@
 import { observable, action, computed, observe } from 'mobx';
 import boardDataStore from '../../stores/boardDataStore';
 
-export class BoardTitleStore {
+export class Store {
   @observable title = boardDataStore.boardName;
-  @observable isDeleteDialogShown = false;
 
   constructor() {
     observe(boardDataStore, change => {
     })
   }
-
-
 
   @action onChangeTitle(value) {
     this.title = value;
@@ -21,14 +18,6 @@ export class BoardTitleStore {
       title: this.title
     })
   }
-
-  @action showDeleteDialog() {
-    this.isDeleteDialogShown = true;
-  }
-
-  @action hideDeleteDialog() {
-    this.isDeleteDialogShown = false
-  }
 }
 
-export default new BoardTitleStore();
+export default new Store();
