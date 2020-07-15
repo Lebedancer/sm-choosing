@@ -1,5 +1,5 @@
 import { observable, action, observe } from 'mobx';
-import boardStore from '../../stores/boardStore';
+import boardStore from '../../../stores/boardStore';
 
 export class Store {
   @observable title = '';

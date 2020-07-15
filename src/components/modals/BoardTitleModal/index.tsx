@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
-import Modal from "../Modal";
-import Input from "../Input";
-import Button from "../Button";
+import Modal from "../../Modal";
+import Input from "../../Input";
+import Button from "../../Button";
 import {observer} from "mobx-react";
 import Store from "./BoardTitleStore";
 import style from "./style.module.scss";

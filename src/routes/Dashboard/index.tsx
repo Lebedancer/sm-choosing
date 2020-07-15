@@ -4,7 +4,7 @@ import './style.css';
 class Index extends React.Component<any> {
     render() {
         return <div className="App">
-           GRID
+           DASHBOARD
         </div>
     };
 }

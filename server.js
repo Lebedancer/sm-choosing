@@ -9,13 +9,13 @@ app.get('/boardInfo', (req, res) => {
     setTimeout(() => res.json({
         boardName: 'Flavio',
         boardId: 1
-    }), 5000)
+    }), 2000)
 });
 
 app.get('/accessRules', (req, res) => {
     setTimeout(() => res.json({
         canShowShareButton: true
-    }), 4000)
+    }), 3000)
 });
 
 app.post('/board/delete', (req, res) => {

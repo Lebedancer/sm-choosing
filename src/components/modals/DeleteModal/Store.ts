@@ -1,5 +1,6 @@
 import { observable, action, computed, observe } from 'mobx';
-import boardStore from '../../stores/boardStore';
+import boardStore from '../../../stores/boardStore';
+import navigateHelper from '../../../helpers/navigateHelper';
 
 export class Store {
   @observable title: string = boardStore.boardName;
@@ -14,10 +15,8 @@ export class Store {
     this.deleting = true;
     return boardStore.removeBoard()
         .then(() => {
-          this.deleting = false;
-        })
-        .catch(() => {
-
+            this.deleting = false;
+            navigateHelper.push('http://localhost:3000/#/Dashboard');
         })
   }
 }
