@@ -1,9 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Modal from "../Modal";
 import Input from "../Input";
 import Button from "../Button";
-import DeleteModal from "../DeleteModal";
-import DuplicateModal from "../DuplicateModal";
 import {observer} from "mobx-react";
 import Store from "./BoardTitleStore";
 import style from "./style.module.scss";
@@ -12,6 +10,8 @@ type CardProps = {
     onClose: () => void,
     isVisible: boolean
 }
+const DeleteModal = React.lazy(() => import('../DeleteModal'));
+const DuplicateModal = React.lazy(() => import('../DuplicateModal'));
 
 class BoardTitleModal extends React.Component<CardProps> {
     private store: any;
@@ -29,15 +29,19 @@ class BoardTitleModal extends React.Component<CardProps> {
     }
 
     renderDuplicateDialog() {
-        return <DuplicateModal
-            isVisible
-            onClose={() => this.store.hideDeleteDialog()}
-            onSubmit={() => {}}
-        />
+        return <Suspense fallback={<div>Loading...</div>}>
+            <DuplicateModal
+                isVisible
+                onClose={() => this.store.hideDeleteDialog()}
+                onSubmit={() => {}}
+            />
+        </Suspense>
     }
 
     renderDeleteDialog() {
-        return <DeleteModal isVisible onClose={() => this.store.hideDeleteDialog()}/>
+        return <Suspense fallback={<div>Loading...</div>}>
+            <DeleteModal isVisible onClose={() => this.store.hideDeleteDialog()}/>
+        </Suspense>
     }
 
     renderOwnView() {
@@ -58,14 +62,14 @@ class BoardTitleModal extends React.Component<CardProps> {
             </section>
             <section className={style.buttonsBar}>
                 <Button onClick={() => this.store.showDeleteDialog()}>Delete</Button>
-                <Button>Duplicate</Button>
+                <Button onClick={() => this.store.showDuplicateDialog()}>Duplicate</Button>
                 <Button>Share</Button>
             </section>
         </Modal>
     }
 
     render() {
-        const { isDeleteDialogShown, isDuplicateDialogShown } = this.store;
+        const {isDeleteDialogShown, isDuplicateDialogShown} = this.store;
 
         if (isDeleteDialogShown) {
             return this.renderDeleteDialog()

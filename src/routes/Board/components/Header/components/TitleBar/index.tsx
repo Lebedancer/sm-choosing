@@ -13,11 +13,11 @@ class Index extends React.Component<any> {
 
         this.store = new TitleBarStore();
     }
-    render() {
-        const {canShowShareButton, boardTitle, isDialogVisible } = this.store;
+
+    renderContent() {
+        const {canShowShareButton, boardTitle } = this.store;
 
         return <React.Fragment>
-            <div className="titleBar">
                 <a href="#grid">
                     <h1>Miro</h1>
                 </a>
@@ -25,6 +25,15 @@ class Index extends React.Component<any> {
                     <h1>{boardTitle}</h1>
                 </button>
                 {canShowShareButton && <Button>Share</Button>}
+        </React.Fragment>
+    }
+
+    render() {
+        const { isDialogVisible, isLoading } = this.store;
+
+        return <React.Fragment>
+            <div className="titleBar">
+                {isLoading ? 'loading' : this.renderContent()}
             </div>
             {isDialogVisible && <BoardTitleModal
                 onClose={() => this.store.hideModal()}

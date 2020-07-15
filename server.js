@@ -5,6 +5,19 @@ var app = express()
 app.use(cors())
 const port = 3001
 
+app.get('/boardInfo', (req, res) => {
+    setTimeout(() => res.json({
+        boardName: 'Flavio',
+        boardId: 1
+    }), 5000)
+});
+
+app.get('/accessRules', (req, res) => {
+    setTimeout(() => res.json({
+        canShowShareButton: true
+    }), 4000)
+});
+
 app.post('/board/delete', (req, res) => {
     setTimeout(() => res.sendStatus(200), 2000)
 });

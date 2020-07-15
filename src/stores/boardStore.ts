@@ -1,10 +1,21 @@
 import { observable, action, computed } from 'mobx';
 import { getData } from '../services/accessRulesService';
-import { deleteBoard } from '../services/boardService';
+import { deleteBoard, loadBoard } from '../services/boardService';
 
-export class BoardStore {
-  @observable public boardName: string = 'board1'
+class BoardStore {
+  @observable public boardName: string = ''
   @observable public boardId: number = 0;
+  @observable public loading: boolean = true;
+
+  constructor() {
+      this.loading = true;
+      loadBoard()
+          .then(({ boardName, boardId}) => {
+              this.boardName = boardName
+              this.boardId = boardId
+              this.loading = false;
+          })
+  }
 
   @action onChangeTitle({title}: {title: string}) {
       this.boardName = title
