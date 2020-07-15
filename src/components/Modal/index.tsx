@@ -25,12 +25,6 @@ class Modal extends React.Component<any> {
         });
     }
 
-    getCloseIcon = () => {
-        return (
-            <a className={style.closeIcon} href="#/">X</a>
-        );
-    }
-
     onMouseDown = (event: any) => {
         const isOverlay = !!event.target.getAttribute(`data-overlay`);
 
@@ -56,10 +50,8 @@ class Modal extends React.Component<any> {
                         data-overlay="1"
                     >
                         <div className={style.modal}>
-                            {this.getCloseIcon()}
                             {children}
                         </div>
-
                     </div>
                 </Portal>
             );

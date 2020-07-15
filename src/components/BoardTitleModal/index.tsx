@@ -3,8 +3,9 @@ import Modal from "../Modal";
 import Input from "../Input";
 import Button from "../Button";
 import DeleteModal from "../DeleteModal";
+import DuplicateModal from "../DuplicateModal";
 import {observer} from "mobx-react";
-import store from "./BoardTitleStore";
+import Store from "./BoardTitleStore";
 import style from "./style.module.scss";
 
 type CardProps = {
@@ -13,24 +14,35 @@ type CardProps = {
 }
 
 class BoardTitleModal extends React.Component<CardProps> {
-    onCloseModal() {
+    private store: any;
+
+    constructor(props: CardProps) {
+        super(props);
+        this.store = new Store();
+    }
+
+    onCloseModal = () => {
         let {onClose} = this.props;
 
-        store.onSave()
-        onClose()
+        this.store.onSave()
+        onClose && onClose()
     }
 
     renderDuplicateDialog() {
-
+        return <DuplicateModal
+            isVisible
+            onClose={() => this.store.hideDeleteDialog()}
+            onSubmit={() => {}}
+        />
     }
 
     renderDeleteDialog() {
-        return <DeleteModal isVisible onClose={() => store.hideDeleteDialog()}/>
+        return <DeleteModal isVisible onClose={() => this.store.hideDeleteDialog()}/>
     }
 
     renderOwnView() {
         let {isVisible} = this.props;
-        const {title} = store;
+        const {title} = this.store;
 
 
         return <Modal
@@ -40,12 +52,12 @@ class BoardTitleModal extends React.Component<CardProps> {
             <section>
                 <Input
                     value={title}
-                    onChange={(val: string) => store.onChangeTitle(val)}
+                    onChange={(val: string) => this.store.onChangeTitle(val)}
                 />
                 <Input/>
             </section>
             <section className={style.buttonsBar}>
-                <Button onClick={() => store.showDeleteDialog()}>Delete</Button>
+                <Button onClick={() => this.store.showDeleteDialog()}>Delete</Button>
                 <Button>Duplicate</Button>
                 <Button>Share</Button>
             </section>
@@ -53,9 +65,14 @@ class BoardTitleModal extends React.Component<CardProps> {
     }
 
     render() {
-        const { isDeleteDialogShown } = store;
+        const { isDeleteDialogShown, isDuplicateDialogShown } = this.store;
+
         if (isDeleteDialogShown) {
             return this.renderDeleteDialog()
+        }
+
+        if (isDuplicateDialogShown) {
+            return this.renderDuplicateDialog()
         }
 
         return this.renderOwnView()

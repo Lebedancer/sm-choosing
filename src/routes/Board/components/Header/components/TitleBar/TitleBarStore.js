@@ -1,15 +1,15 @@
-import {observable, action, computed, observe} from 'mobx';
+import {observable, action, observe} from 'mobx';
 import {getData} from '../../../../../../services/accessRulesService';
-import boardDataStore from '../../../../../../stores/boardDataStore';
+import boardStore from '../../../../../../stores/boardStore';
 
-export class TitleBarStore {
+class TitleBarStore {
     @observable isLoading = false;
-    @observable boardTitle = boardDataStore.boardName;
+    @observable boardTitle = boardStore.boardName;
     @observable canShowShareButton = false;
     @observable isDialogVisible = false;
 
     constructor() {
-        observe(boardDataStore, ({ newValue }) => {
+        observe(boardStore, ({ newValue }) => {
             this.boardTitle = newValue;
         })
 
@@ -26,7 +26,6 @@ export class TitleBarStore {
     @action hideModal() {
         this.isDialogVisible = false;
     }
-
 }
 
-export default new TitleBarStore();
+export default TitleBarStore;

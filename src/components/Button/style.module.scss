@@ -2,7 +2,7 @@
   box-sizing: border-box;
   display: inline-block;
   border: 1px solid;
-  padding: 14px 24px 16px;
+  padding: 10px 24px 10px;
   font-size: 16px;
   border-radius: 4px;
   overflow: hidden;
@@ -16,4 +16,19 @@
   color: #fff;
   border-color: #4262ff;
   background-color: #4262ff;
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.loading {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

@@ -1,14 +1,19 @@
 import React from "react";
-import "./style.css"
+import style from "./style.module.scss";
 
 class Index extends React.Component<any> {
+    renderLoading() {
+        return <span className={style.loading}>Loading</span>
+    }
+
     render() {
-        const { onClick, children } = this.props;
+        const { onClick, children, isLoading } = this.props;
         return <button
-            className="mButton"
+            className={style.mButton}
             onClick={onClick}
         >
-            {children}
+
+            {isLoading ? this.renderLoading() : children}
         </button>
     };
 }
