@@ -21,6 +21,12 @@ export class Store {
       title: this.title
     })
   }
+
+  @action show1111() {
+    boardStore.onChangeTitle({
+      title: this.title
+    })
+  }
 }
 
 export default Store;

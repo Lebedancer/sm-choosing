@@ -12,6 +12,20 @@ app.get('/boardInfo', (req, res) => {
     }), 2000)
 });
 
+app.get('/dashboards', (req, res) => {
+    setTimeout(() => res.json([{
+        boardName: 'Flavio',
+        boardId: 1
+    }, {
+        boardName: 'Bugaga',
+        boardId: 2
+    },{
+        boardName: '222222',
+        boardId: 3
+    },
+    ]), 2000)
+});
+
 app.get('/accessRules', (req, res) => {
     setTimeout(() => res.json({
         canShowShareButton: true
