@@ -3,7 +3,7 @@ import Modal from "../../Modal";
 import Input from "../../Input";
 import Button from "../../Button";
 import {observer} from "mobx-react";
-import store from "./BoardTitleStore";
+import Store from "./Store";
 import style from "./style.module.scss";
 
 type CardProps = {
@@ -11,30 +11,15 @@ type CardProps = {
     isVisible: boolean
 }
 
+const store = new Store();
+
 function BoardTitleModal({ onClose, isVisible}: CardProps) {
-    const { title } = store;
-    
-    function onCloseModal() {
-        store.onSave()
-        onClose()
-    }
-    
+
     return <Modal
-        onClose={onCloseModal}
+        onClose={onClose}
         isVisible={isVisible}
     >
-        <section>
-            <Input
-                value={title}
-                onChange={(val: string) => store.onChangeTitle(val)}
-            />
-            <Input />
-        </section>
-        <section className={style.buttonsBar}>
-            <Button>Delete</Button>
-            <Button>Duplicate</Button>
-            <Button>Share</Button>
-        </section>
+
     </Modal>
 }
 

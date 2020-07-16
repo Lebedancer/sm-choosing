@@ -4,6 +4,7 @@ import TitleBarStore from "./TitleBarStore";
 import {observer} from "mobx-react";
 import "./style.css"
 import BoardTitleModal from "../../../../../../components/modals/BoardTitleModal";
+import ShareModal from "../../../../../../components/modals/ShareModal";
 
 class Index extends React.Component<any> {
     private store: any;
@@ -24,21 +25,27 @@ class Index extends React.Component<any> {
                 <button onClick={() => this.store.showModal()}>
                     <h1>{boardTitle}</h1>
                 </button>
-                {canShowShareButton && <Button>Share</Button>}
+                {canShowShareButton && <Button
+                    onClick={() => this.store.showShareModal()}
+                >Share</Button>}
         </React.Fragment>
     }
 
     render() {
-        const { isDialogVisible, isLoading } = this.store;
+        const { isTitleDialogVisible, isShareDialogVisible, isLoading } = this.store;
 
         return <React.Fragment>
             <div className="titleBar">
                 {isLoading ? 'loading' : this.renderContent()}
             </div>
-            {isDialogVisible && <BoardTitleModal
+            {isTitleDialogVisible && <BoardTitleModal
                 onClose={() => this.store.hideModal()}
                 isVisible
             />}
+            {isShareDialogVisible && <ShareModal
+            onClose={() => this.store.hideModal()}
+            isVisible
+        />}
         </React.Fragment>
     };
 }

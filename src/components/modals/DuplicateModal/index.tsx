@@ -29,7 +29,7 @@ function BoardTitleModal({ onClose, isVisible, onSubmit}: CardProps) {
         isVisible={isVisible}
     >
         <h1>Copy board in account</h1>
-        <Input value={title} />
+        <Input value={title} onChange={() => {}} />
         <section className={style.buttonsBar}>
             <Button onClick={onClickSubmit}>Duplicate</Button>
             <Button onClick={onClose}>Cancel</Button>

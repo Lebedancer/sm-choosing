@@ -11,7 +11,8 @@ class TitleBarStore {
     @observable public isLoading = true;
     @observable public boardTitle = boardStore.boardName;
     @observable public canShowShareButton = accessRulesStore.canShowShareButton;
-    @observable public isDialogVisible = false;
+    @observable public isTitleDialogVisible = false;
+    @observable public isShareDialogVisible = false;
 
     // private loadingObj: LoadingObj = {
     //     isBoardDataLoading: true,
@@ -23,11 +24,21 @@ class TitleBarStore {
     }
 
     @action showModal() {
-        this.isDialogVisible = true;
+        this.isTitleDialogVisible = true;
+        this.isShareDialogVisible = false;
+    }
+
+    @action showShareModal() {
+        this.isShareDialogVisible = true;
+        this.isTitleDialogVisible = false;
     }
 
     @action hideModal() {
-        this.isDialogVisible = false;
+        this.isTitleDialogVisible = false;
+    }
+
+    @action hideShareModal() {
+        this.isShareDialogVisible = false;
     }
 
     initObservers() {

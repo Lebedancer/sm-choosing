@@ -58,7 +58,6 @@ class BoardTitleModal extends React.Component<CardProps> {
                     value={title}
                     onChange={(val: string) => this.store.onChangeTitle(val)}
                 />
-                <Input/>
             </section>
             <section className={style.buttonsBar}>
                 <Button onClick={() => this.store.showDeleteDialog()}>Delete</Button>
