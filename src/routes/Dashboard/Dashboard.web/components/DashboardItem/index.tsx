@@ -1,6 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import style from "./style.module.scss";
+import Actions from "../../../../../components/Actions";
 import Store, { IStore } from "./Store";
+import {observer} from "mobx-react";
 
 interface Iprops {
     boardName: string
@@ -17,17 +19,32 @@ class Index extends React.Component<Iprops> {
     }
 
     renderActionsSection() {
-        return <div></div>
+        const { actionsList, isListLoading } = this.store;
+
+        return <Actions
+            onClick={() => this.store.loadList()}
+            className={style.actions}
+            isLoading={isListLoading}
+            data={actionsList}
+        />
     }
 
-    render() {
+    renderContent() {
         const { boardName } = this.store;
-        return <div className={style.item}>
+
+        return <Fragment>
             <div className={style.image}/>
             <div className={style.textBlock}>{boardName}</div>
             {this.renderActionsSection()}
+        </Fragment>
+    }
+
+    render() {
+
+        return <div className={style.item}>
+            {this.renderContent()}
         </div>
     };
 }
 
-export default Index;
+export default observer(Index);

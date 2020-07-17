@@ -1,0 +1,35 @@
+.actions {
+  position: absolute;
+  background: #ecf2f2;
+}
+
+.list {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: -10px;
+  background: #43eab6;
+  z-index: 200;
+  transform: translate(100%);;
+
+  li {
+    padding: 2px 5px;
+    white-space: nowrap;
+  }
+}
+
+.loading {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.head {
+  cursor: pointer;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}

@@ -1,8 +1,12 @@
 const express = require('express')
 var cors = require('cors')
 var app = express()
+const bodyParser = require('body-parser');
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(cors())
+
 const port = 3001
 
 app.get('/boardInfo', (req, res) => {
@@ -10,6 +14,36 @@ app.get('/boardInfo', (req, res) => {
         boardName: 'Flavio',
         boardId: 1
     }), 2000)
+});
+
+app.get('/userData', (req, res) => {
+    setTimeout(() => res.json({
+        userId: 12,
+        userName: 'Ololo'
+    }), 2000)
+});
+
+app.get('/accessRulesForBoard', (req, res) => {
+    const boardId = +req.query.boardId;
+    if (boardId === 1) {
+        setTimeout(() => res.json({
+            userRole: 'guest'
+        }), 2000)
+    }
+
+    if (boardId === 2) {
+        setTimeout(() => res.json({
+            userRole: 'admin'
+        }), 2000)
+    }
+
+    if (boardId === 3) {
+        setTimeout(() => res.json({
+            userRole: 'participant'
+        }), 2000)
+    }
+
+
 });
 
 app.get('/dashboards', (req, res) => {
