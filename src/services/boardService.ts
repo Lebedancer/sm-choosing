@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { BoardData } from '../types/BoardTypes';
 
 export const loadBoard = (): Promise<BoardData> => {
     return axios.get('http://localhost:3001/boardInfo')

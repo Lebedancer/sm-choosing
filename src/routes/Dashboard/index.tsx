@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {Suspense, Fragment } from 'react';
 import style from './style.module.scss';
-import DashboardItem from '../../components/DashboardItem';
 import Store, { IStore } from './Store';
 import {observer} from "mobx-react";
+
+const DashboardMobile = React.lazy(() => import('./Dashboard.mobile'));
+const DashboardWeb = React.lazy(() => import('./Dashboard.web'));
 
 class Index extends React.Component<any> {
     private store: IStore;
@@ -14,23 +16,23 @@ class Index extends React.Component<any> {
 
     }
 
-    renderList() {
-        const { list, loading } = this.store;
-
-        if (loading) {
-            return <div>Loading....</div>
-        }
-
-        return list.map(item => <DashboardItem {...item} />)
-
+    renderWebView() {
+        return <Suspense fallback={<div>Loading...</div>}>
+            <DashboardWeb />
+        </Suspense>
     }
+
+    renderMobileView() {
+        return <Suspense fallback={<div>Loading...</div>}>
+            <DashboardMobile />
+        </Suspense>
+    }
+
     render() {
-        return <div className={style.dashboard}>
-            <aside className={style.sidebar}/>
-            <div className={style.content}>
-                {this.renderList()}
-            </div>
-        </div>
+        const { canShowMobile } = this.store;
+        return <Fragment>
+            {canShowMobile ? this.renderMobileView() : this.renderWebView()}
+        </Fragment>
     };
 }
 

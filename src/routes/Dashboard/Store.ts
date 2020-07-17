@@ -1,33 +1,26 @@
 import { observable, action, computed, observe } from 'mobx';
-import dashboardStore from '../../stores/dashboardStore';
-import {BoardData} from "../../types/BoardTypes";
-// import accessRulesStore from "../../stores/accessRulesStore";
+
 export interface IStore {
-  list: BoardData[]
-  loading: boolean
+  canShowMobile: boolean
+  canShowWeb: boolean
+  choosePlatform: () => void
 }
 export class Store implements IStore{
-  @observable list = dashboardStore.list;
-  @observable loading = dashboardStore.loading;
+  @observable canShowMobile = false;
+  @observable canShowWeb = false;
 
   constructor() {
-    this.initObservers()
+    this.choosePlatform()
   }
 
-  initObservers() {
-    observe(dashboardStore, (change) => {
-      if (change.type === "update") {
-        const {name, newValue} = change;
+  choosePlatform() {
+    const isWeb = true;
 
-        if (name === 'list') {
-          this.list = newValue
-        }
-
-        if (name === 'loading') {
-          this.loading = newValue
-        }
-      }
-    })
+    if (isWeb) {
+      this.canShowWeb = true;
+    } else {
+      this.canShowMobile = true;
+    }
   }
 }
 
