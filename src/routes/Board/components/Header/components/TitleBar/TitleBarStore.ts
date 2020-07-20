@@ -8,7 +8,7 @@ type LoadingObj = {
 }
 
 class TitleBarStore {
-    @observable public isLoading = true;
+    @observable public isLoading = boardStore.loading;
     @observable public boardTitle = boardStore.boardName;
     @observable public canShowShareButton = accessRulesStore.canShowShareButton;
     @observable public isTitleDialogVisible = false;
@@ -68,10 +68,6 @@ class TitleBarStore {
             }
         })
     }
-
-    // isLoadingProcess() {
-    //     return Object.values(this.loadingObj).find(key => key);
-    // }
 }
 
 export default TitleBarStore;
