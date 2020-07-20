@@ -2,7 +2,6 @@ import { observable, action, computed, observe } from 'mobx';
 import dashboardStore from '../../../stores/dashboardStore';
 import {BoardData} from "../../../types/BoardTypes";
 
-// import accessRulesStore from "../../stores/accessRulesStore";
 export interface IStore {
   list: BoardData[]
   loading: boolean

@@ -13,7 +13,6 @@ class Index extends React.Component<any> {
         super(props);
 
         this.store = new Store();
-
     }
 
     renderWebView() {
