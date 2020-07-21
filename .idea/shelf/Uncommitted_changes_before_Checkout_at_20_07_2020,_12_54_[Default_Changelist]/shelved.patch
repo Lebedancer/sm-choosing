@@ -1,0 +1,42 @@
+Index: src/App.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport {Switch, Route, withRouter} from 'react-router-dom';\nimport Board from './routes/Board';\nimport Dashboard from './routes/Dashboard';\nimport testSpace from './routes/testSpace';\nimport './App.css';\n\nclass App extends React.Component<any> {\n    constructor(props: any) {\n        super(props);\n    }\n\n    render() {\n        return <div className=\"App\">\n            <Switch>\n                <Route path=\"/\" component={testSpace} exact/>\n                {/*<Route path=\"/\" component={Board} exact/>*/}\n                <Route path=\"/Dashboard\" component={Dashboard}/>\n                {/*<Route path=\"/test\" component={testSpace}/>*/}\n            </Switch>\n        </div>\n    };\n}\n\nexport default withRouter(App);\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/App.tsx	(revision ddc49a4bc2544a30f7fd07ecbcd5a5b9e07b223f)
++++ src/App.tsx	(date 1595238752345)
+@@ -13,8 +13,8 @@
+     render() {
+         return <div className="App">
+             <Switch>
+-                <Route path="/" component={testSpace} exact/>
+-                {/*<Route path="/" component={Board} exact/>*/}
++                {/*<Route path="/" component={testSpace} exact/>*/}
++                <Route path="/" component={Board} exact/>
+                 <Route path="/Dashboard" component={Dashboard}/>
+                 {/*<Route path="/test" component={testSpace}/>*/}
+             </Switch>
+Index: src/index.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport ReactDOM from 'react-dom';\nimport { HashRouter } from \"react-router-dom\";\nimport './index.css';\nimport App from './App';\nimport { initMobxSpy } from './helpers/tracer';\n\n// initMobxSpy() // whole project\n\nReactDOM.render(\n  // <React.StrictMode>\n      <HashRouter>\n        <App />\n      </HashRouter>\n  ,\n  // </React.StrictMode>,\n  document.getElementById('root')\n);\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/index.tsx	(revision ddc49a4bc2544a30f7fd07ecbcd5a5b9e07b223f)
++++ src/index.tsx	(date 1595238819290)
+@@ -8,11 +8,8 @@
+ // initMobxSpy() // whole project
+ 
+ ReactDOM.render(
+-  // <React.StrictMode>
+       <HashRouter>
+         <App />
+-      </HashRouter>
+-  ,
+-  // </React.StrictMode>,
++      </HashRouter>,
+   document.getElementById('root')
+ );
