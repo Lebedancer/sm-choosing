@@ -8,10 +8,11 @@ import { initMobxSpy } from './helpers/tracer';
 // initMobxSpy() // whole project
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
       <HashRouter>
         <App />
       </HashRouter>
-  </React.StrictMode>,
+  ,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
