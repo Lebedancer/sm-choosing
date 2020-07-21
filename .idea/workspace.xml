@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4503f4ed-e211-45e2-8ee6-916b18e39ba8" name="Default Changelist" comment="last changes">
+      <change beforePath="$PROJECT_DIR$/config/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="9e868189b7690242a10dab514cdc7bef92b179af" />
+  </component>
+  <component name="ProjectId" id="1eUBwmkLNcxgenOw6AnLdlLigtb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/routes/testSpace/components/DeepDataTest" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/routes/testSpace" />
+      <recent name="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.web/components" />
+      <recent name="$PROJECT_DIR$/src/components/modals" />
+      <recent name="$PROJECT_DIR$/src/routes/Board/components/Header/components/TitleBar" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes/testSpace/components/DeepDataTest" />
+      <recent name="$PROJECT_DIR$/src/routes/testSpace/components" />
+      <recent name="$PROJECT_DIR$/src/routes/testSpace" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/routes" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4503f4ed-e211-45e2-8ee6-916b18e39ba8" name="Default Changelist" comment="" />
+      <created>1594366531961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594366531961</updated>
+      <workItem from="1594366533353" duration="1182000" />
+      <workItem from="1594368230358" duration="396000" />
+      <workItem from="1594392586725" duration="16015000" />
+      <workItem from="1594651738160" duration="26541000" />
+      <workItem from="1594879678090" duration="2246000" />
+      <workItem from="1594898302846" duration="2000" />
+      <workItem from="1594899479529" duration="39467000" />
+    </task>
+    <task id="LOCAL-00001" summary="first steps">
+      <created>1594623928020</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594623928020</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modal mess">
+      <created>1594712756236</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594712756236</updated>
+    </task>
+    <task id="LOCAL-00003" summary="delete dialog working">
+      <created>1594812219675</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594812219675</updated>
+    </task>
+    <task id="LOCAL-00004" summary="some commits">
+      <created>1594821191118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594821191118</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add navigation">
+      <created>1594822553530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594822553530</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix ts errors">
+      <created>1594884447674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594884447674</updated>
+    </task>
+    <task id="LOCAL-00007" summary="dashboard loading">
+      <created>1594910390270</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594910390270</updated>
+    </task>
+    <task id="LOCAL-00008" summary="dashboard implements differernt platforms (web, mobile)">
+      <created>1594972447975</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594972447975</updated>
+    </task>
+    <task id="LOCAL-00009" summary="show lists with different values">
+      <created>1594988828047</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594988828047</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add spy">
+      <created>1595229526682</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595229526682</updated>
+    </task>
+    <task id="LOCAL-00011" summary="first test steps">
+      <created>1595237783825</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1595237783825</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add readme">
+      <created>1595238504765</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1595238504765</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add nav">
+      <created>1595239958150</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1595239958150</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add perfomance test">
+      <created>1595242866868</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1595242866868</updated>
+    </task>
+    <task id="LOCAL-00015" summary="decrease version mobx-react">
+      <created>1595243487678</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1595243487678</updated>
+    </task>
+    <task id="LOCAL-00016" summary="injection tests">
+      <created>1595253949271</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1595253949271</updated>
+    </task>
+    <task id="LOCAL-00017" summary="last changes">
+      <created>1595313518104</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1595313518104</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/types/BoardTypes.d.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first steps" />
+    <MESSAGE value="modal mess" />
+    <MESSAGE value="delete dialog working" />
+    <MESSAGE value="some commits" />
+    <MESSAGE value="add navigation" />
+    <MESSAGE value="fix ts errors" />
+    <MESSAGE value="dashboard loading" />
+    <MESSAGE value="dashboard implements differernt platforms (web, mobile)" />
+    <MESSAGE value="show lists with different values" />
+    <MESSAGE value="add spy" />
+    <MESSAGE value="first test steps" />
+    <MESSAGE value="add readme" />
+    <MESSAGE value="add nav" />
+    <MESSAGE value="add perfomance test" />
+    <MESSAGE value="decrease version mobx-react" />
+    <MESSAGE value="injection tests" />
+    <MESSAGE value="last changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="last changes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2572" y="422" key="Git.Interactive.Rebase.Dialog" timestamp="1595313627311">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2572" y="422" key="Git.Interactive.Rebase.Dialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313627311" />
+    <state x="2355" y="282" key="MergeDialog" timestamp="1595313650521">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2355" y="282" key="MergeDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313650521" />
+    <state x="2713" y="500" key="MultipleFileMergeDialog" timestamp="1595313650551">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2713" y="500" key="MultipleFileMergeDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313650551" />
+    <state x="2833" y="441" key="RollbackChangesDialog" timestamp="1595232921957">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2833" y="441" key="RollbackChangesDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595232921957" />
+    <state x="2581" y="370" key="SettingsEditor" timestamp="1594984662177">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2581" y="370" key="SettingsEditor/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1594984662177" />
+    <state x="2861" y="443" key="VCS.ChangeListViewerDialog" timestamp="1595239983546">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2861" y="443" key="VCS.ChangeListViewerDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595239983546" />
+    <state x="2672" y="471" key="Vcs.Push.Dialog.v2" timestamp="1595313666735">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2672" y="471" key="Vcs.Push.Dialog.v2/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313666735" />
+    <state x="2695" y="349" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595313063556">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2695" y="349" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313063556" />
+    <state x="2875" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595237819244">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2875" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595237819244" />
+    <state x="2779" y="486" width="586" height="490" key="find.popup" timestamp="1594981855040">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2779" y="486" width="586" height="490" key="find.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1594981855040" />
+    <state x="2840" y="451" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595238858950">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2840" y="451" key="git4idea.branch.GitSmartOperationDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595238858950" />
+    <state x="2733" y="600" key="git4idea.rebase.GitRebaseDialog" timestamp="1595313617011">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2733" y="600" key="git4idea.rebase.GitRebaseDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313617011" />
+    <state x="2877" y="651" key="git4idea.rebase.GitUnstructuredEditor" timestamp="1595313652102">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2877" y="651" key="git4idea.rebase.GitUnstructuredEditor/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313652102" />
+    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1595313432815">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313432815" />
+  </component>
+</project>
