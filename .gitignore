@@ -20,4 +20,6 @@
 
 npm-debug.log*
 yarn-debug.log*
+
+.idea
 yarn-error.log*

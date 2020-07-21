@@ -11,7 +11,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4503f4ed-e211-45e2-8ee6-916b18e39ba8" name="Default Changelist" comment="last changes">
-      <change beforePath="$PROJECT_DIR$/config/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/mobx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/redux.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/main/Main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/main/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/mobx/AppMobx.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/TitleBar/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/mobx/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/AppRedux.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/Canvas/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/Canvas/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/Header/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/Header/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/TitleBar/TitleBarStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/TitleBar/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.mobile/Store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.mobile/components/DashboardItem/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.mobile/components/DashboardItem/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.mobile/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.web/Store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.web/components/DashboardItem/Store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.web/components/DashboardItem/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.web/components/DashboardItem/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.web/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.web/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/testSpace/components/AutoIncrementItem/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/testSpace/components/AutoIncrementItem/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/testSpace/components/DeepDataTest/Store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/testSpace/components/DeepDataTest/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/testSpace/components/DeepDataTest/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/testSpace/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/testSpace/perfStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/testSpace/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/stores/accessRulesStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/stores/boardStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/stores/dashboardStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/stores/userStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/BoardTitleModal/BoardTitleStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/BoardTitleModal/BoardTitleStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/DeleteModal/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/DeleteModal/Store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/DuplicateModal/Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/DuplicateModal/Store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Board/components/Canvas/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/Canvas/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Board/components/Canvas/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/Canvas/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Board/components/Header/components/TitleBar/TitleBarStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/TitleBar/TitleBarStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Board/components/Header/components/TitleBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/TitleBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Board/components/Header/components/TitleBar/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/TitleBar/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Board/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Board/components/Header/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/Header/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Board/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Board/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.mobile/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.mobile/Store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.mobile/components/DashboardItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.mobile/components/DashboardItem/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.mobile/components/DashboardItem/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.mobile/components/DashboardItem/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.mobile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.mobile/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.mobile/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.mobile/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.web/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/Store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.web/components/DashboardItem/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/components/DashboardItem/Store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.web/components/DashboardItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/components/DashboardItem/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.web/components/DashboardItem/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/components/DashboardItem/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.web/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/routes/Dashboard/Dashboard.mobile/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.web/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/testSpace/components/AutoIncrementItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/components/AutoIncrementItem/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/testSpace/components/AutoIncrementItem/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/components/AutoIncrementItem/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/testSpace/components/DeepDataTest/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/components/DeepDataTest/Store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/testSpace/components/DeepDataTest/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/components/DeepDataTest/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/testSpace/components/DeepDataTest/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/components/DeepDataTest/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/testSpace/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/testSpace/perfStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/perfStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/testSpace/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/accessRulesStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/stores/accessRulesStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/boardStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/stores/boardStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/dashboardStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/stores/dashboardStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/userStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/stores/userStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +137,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/routes/testSpace/components/DeepDataTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,19 +149,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/routes/testSpace" />
-      <recent name="$PROJECT_DIR$/src/routes/Dashboard/Dashboard.web/components" />
-      <recent name="$PROJECT_DIR$/src/components/modals" />
-      <recent name="$PROJECT_DIR$/src/routes/Board/components/Header/components/TitleBar" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/main" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/mobx" />
       <recent name="$PROJECT_DIR$/src/routes/testSpace/components/DeepDataTest" />
       <recent name="$PROJECT_DIR$/src/routes/testSpace/components" />
-      <recent name="$PROJECT_DIR$/src/routes/testSpace" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/routes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/components" />
+      <recent name="$PROJECT_DIR$/src/pages/mobx/routes/Board/components" />
+      <recent name="$PROJECT_DIR$/src/imgs" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/mobx" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -99,6 +181,7 @@
       <workItem from="1594879678090" duration="2246000" />
       <workItem from="1594898302846" duration="2000" />
       <workItem from="1594899479529" duration="39467000" />
+      <workItem from="1595314882537" duration="4850000" />
     </task>
     <task id="LOCAL-00001" summary="first steps">
       <created>1594623928020</created>
@@ -230,6 +313,16 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -263,6 +356,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="last changes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1892" y="123" width="2360" height="1217" key="DiffContextDialog" timestamp="1595316416586">
+      <screen x="1792" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1892" y="123" width="2360" height="1217" key="DiffContextDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595316416586" />
     <state x="2572" y="422" key="Git.Interactive.Rebase.Dialog" timestamp="1595313627311">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
@@ -315,9 +412,9 @@
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="2877" y="651" key="git4idea.rebase.GitUnstructuredEditor/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313652102" />
-    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1595313432815">
+    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1595319965281">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
-    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313432815" />
+    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595319965281" />
   </component>
 </project>

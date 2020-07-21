@@ -1,0 +1,23 @@
+.dashboard {
+  background: #f4f5f7;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  background-color: #24331f;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: space-between;
+}
