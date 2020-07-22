@@ -1,7 +1,6 @@
 import React, {Suspense, Fragment } from 'react';
 import style from './style.module.scss';
 import Store, { IStore } from './Store';
-import {observer} from "mobx-react";
 
 const DashboardMobile = React.lazy(() => import('./Dashboard.mobile'));
 const DashboardWeb = React.lazy(() => import('./Dashboard.web'));
@@ -28,11 +27,12 @@ class Index extends React.Component<any> {
     }
 
     render() {
-        const { canShowMobile } = this.store;
+        // const { canShowMobile } = this.store;
+        const canShowMobile = false;
         return <Fragment>
             {canShowMobile ? this.renderMobileView() : this.renderWebView()}
         </Fragment>
     };
 }
 
-export default observer(Index);
+export default Index;

@@ -1,28 +1,40 @@
 import React from 'react';
 import style from './style.module.scss';
 import DashboardItem from './components/DashboardItem';
-import Store, { IStore } from './Store';
-import {observer} from "mobx-react";
+import {connect} from 'react-redux';
 
-class Index extends React.Component<any> {
-    private store: IStore;
+const mapStateToProps = ({dashboard}: { dashboard: any }) => {
+    return dashboard;
+}
+
+const mapDispatchToProps = (dispatch: any) => ({
+    loadData: () =>
+        dispatch({type: 'DASHBOARD_LOADING'}),
+});
+
+class DashboardWeb extends React.Component<any> {
+    // UI state here
+    public static defaultProps = {
+        loading: true
+    }
 
     constructor(props: any) {
         super(props);
 
-        this.store = new Store();
+        this.props.loadData();
     }
 
     renderList() {
-        const { list, loading } = this.store;
+        const {data, loading} = this.props;
 
         if (loading) {
             return <div>Loading....</div>
         }
 
-        return list.map(item => <DashboardItem {...item} />)
+        return data.list.map((item: any) => <DashboardItem {...item} />)
 
     }
+
     render() {
         return <div className={style.dashboard}>
             <aside className={style.sidebar}/>
@@ -33,4 +45,4 @@ class Index extends React.Component<any> {
     };
 }
 
-export default observer(Index);
+export default connect(mapStateToProps, mapDispatchToProps)(DashboardWeb);
