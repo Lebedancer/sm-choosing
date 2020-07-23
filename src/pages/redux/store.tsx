@@ -4,13 +4,11 @@ import { applyMiddleware, createStore } from 'redux';
 // import { promiseMiddleware, localStorageMiddleware } from './middleware';
 import reducer from './reducer';
 import createSagaMiddleware from 'redux-saga'
-import defaultSaga from './routes/lazy-dashBoard/Dashboard.web/sagas'
+import defaultSaga from './routes/DashBoard/Dashboard.web/sagas'
 // import { combineReducers } from 'redux';
 
 // import { routerMiddleware } from 'react-router-redux'
 import createHistory from 'history/createBrowserHistory';
-import {takeLatest} from "redux-saga/effects";
-import mySaga from './routes/Dashboard/Dashboard.web/sagas'
 
 export const history = createHistory();
 
@@ -51,7 +49,9 @@ function createSagaInjector(runSaga: any, rootSaga: any) {
 }
 
 const initialStore = {
-
+    platform: {
+        isMobile: false
+    }
 }
 
 function configureStore(initialState: any) {
@@ -77,8 +77,3 @@ function configureStore(initialState: any) {
 }
 
 export const store = configureStore(initialStore);
-
-// export const store = createStore(
-//     reducer(), initialStore, applyMiddleware(sagaMiddleware));
-// //
-// sagaMiddleware.run(mySaga)
