@@ -1,13 +1,13 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import {Switch, Route, withRouter} from 'react-router-dom';
-import Board from './routes/Board';
+import Board from './routes/Board/index';
 import testSpace from './routes/testSpace';
 import style from './style.module.scss';
 import { Provider } from 'react-redux';
-// import store from './store';
 import { store } from './store';
 import { getDashboardPlatformComponent } from './routes/DashBoard/module';
 
+// ? another approach to load lazy views(more verbose)
 // // @ts-ignore
 //     return platformModule.then((module) => {
 //         store.injectReduxStuff('dashboard', module);
@@ -25,6 +25,14 @@ const lazyDashBoard = lazy(() => {
     })
 });
 
+const lazyBoard = lazy(() => {
+// @ts-ignore
+    return import('./routes/Board/lazy').then((module) => {
+
+        return module.component;
+    })
+});
+
 class App extends React.Component<any> {
     render() {
         return <Provider store={store}>
@@ -36,7 +44,7 @@ class App extends React.Component<any> {
                     <a href="/redux/test">test</a>
                 </section>
                 <Switch>
-                    <Route path="/redux/" component={Board} exact/>
+                    <Route path="/redux/" component={lazyBoard} exact/>
                     <Route path="/redux/Dashboard" component={lazyDashBoard}/>
                     <Route path="/redux/test" component={testSpace}/>
                 </Switch>

@@ -1,7 +1,6 @@
 import { call, put, takeLatest } from 'redux-saga/effects'
 import { getData } from '../../../../../services/dashboardService'
 
-// worker Saga: will be fired on USER_FETCH_REQUESTED actions
 const fetchUserPr = () => getData()
 
 function* fetchUser() {

@@ -1,10 +1,12 @@
-import reducer1 from './reducer'
-import sagas from './sagas'
 import { store } from '../../../store';
+import {
+    DASHBOARD_LOADING
+} from './actions/types';
 
-export const reducer = reducer1;
-export const saga = sagas;
+export { default as saga } from './sagas'
+export { default as reducer } from './reducer'
 
-store.dispatch({type: 'DASHBOARD_LOADING'});
+
+store.dispatch({type: DASHBOARD_LOADING});
 
 export const component = import('./index');

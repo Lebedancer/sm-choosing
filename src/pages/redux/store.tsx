@@ -4,11 +4,17 @@ import { applyMiddleware, createStore } from 'redux';
 // import { promiseMiddleware, localStorageMiddleware } from './middleware';
 import reducer from './reducer';
 import createSagaMiddleware from 'redux-saga'
-import defaultSaga from './routes/DashBoard/Dashboard.web/sagas'
+import boardInfoSaga from './sagas/boadInfoSaga'
+import accessRulesSaga from './sagas/accessRulesSaga'
 // import { combineReducers } from 'redux';
 
 // import { routerMiddleware } from 'react-router-redux'
 import createHistory from 'history/createBrowserHistory';
+
+const defaultSagas = {
+    boardInfoSaga,
+    accessRulesSaga
+}
 
 export const history = createHistory();
 
@@ -43,7 +49,16 @@ function createSagaInjector(runSaga: any, rootSaga: any) {
     };
 
     // Inject the root saga as it a staticlly loaded file,
-    injectSaga('root', rootSaga);
+    if (typeof rootSaga === 'function') {
+        injectSaga('root', rootSaga);
+    } else if(typeof rootSaga === 'object' && rootSaga !== null) {
+        const keys = Object.keys(rootSaga);
+
+        keys.forEach(key => {
+            injectSaga(key, rootSaga[key]);
+        })
+
+    }
 
     return injectSaga;
 }
@@ -61,7 +76,7 @@ function configureStore(initialState: any) {
 
     store.asyncReducers = {}
 
-    store.injectSaga = createSagaInjector(sagaMiddleware.run, defaultSaga);
+    store.injectSaga = createSagaInjector(sagaMiddleware.run, defaultSagas);
 
     store.injectReducer = (key: string, asyncReducer: any) => {
         store.asyncReducers[key] = asyncReducer;

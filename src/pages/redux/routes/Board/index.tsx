@@ -1,7 +1,6 @@
 import React from "react";
 import Canvas from "./components/Canvas";
 import Header from "./components/Header";
-import { observer } from "mobx-react";
 
 class Index extends React.Component<any> {
     render() {
@@ -12,4 +11,4 @@ class Index extends React.Component<any> {
     };
 }
 
-export default observer(Index);
+export default Index;

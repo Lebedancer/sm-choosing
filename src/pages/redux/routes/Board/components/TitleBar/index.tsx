@@ -1,53 +1,64 @@
 import React from "react";
 import Button from "../../../../../../components/Button";
-import TitleBarStore from "./TitleBarStore";
-import {observer} from "mobx-react";
 import "./style.css"
 import BoardTitleModal from "../../../../../../components/modals/BoardTitleModal";
 import ShareModal from "../../../../../../components/modals/ShareModal";
+import { isLoading, canShowShareButton } from "./selectors";
+import {connect} from "react-redux";
+
+const mapStateToProps = (state: any) => {
+    return {
+        isLoading: isLoading(state),
+        canShowShareButton: canShowShareButton(state),
+        ...state.boardInfo
+    };
+}
+
+const mapDispatchToProps = (dispatch: any) => ({
+});
 
 class Index extends React.Component<any> {
-    private store: any;
-
-    constructor(props: any) {
-        super(props);
-
-        this.store = new TitleBarStore();
+    state = {
+        isTitleDialogVisible: false,
+        isShareDialogVisible: false,
     }
 
     renderContent() {
-        const {canShowShareButton, boardTitle } = this.store;
+        const { data: {boardName} } = this.props;
 
         return <React.Fragment>
                 <a href="#grid">
                     <h1>Miro</h1>
                 </a>
-                <button onClick={() => this.store.showModal()}>
-                    <h1>{boardTitle}</h1>
+                <button onClick={() => {}}>
+                    <h1>{boardName}</h1>
                 </button>
                 {canShowShareButton && <Button
-                    onClick={() => this.store.showShareModal()}
+                    onClick={() => {}}
                 >Share</Button>}
         </React.Fragment>
     }
 
     render() {
-        const { isTitleDialogVisible, isShareDialogVisible, isLoading } = this.store;
+        const { isLoading } = this.props;
+        const { isTitleDialogVisible, isShareDialogVisible } = this.state;
 
         return <React.Fragment>
             <div className="titleBar">
                 {isLoading ? 'loading' : this.renderContent()}
             </div>
             {isTitleDialogVisible && <BoardTitleModal
-                onClose={() => this.store.hideModal()}
+                // onClose={() => this.store.hideModal()}
+                onClose={() => {}}
                 isVisible
             />}
             {isShareDialogVisible && <ShareModal
-            onClose={() => this.store.hideModal()}
+            onClose={() => {}}
+            // onClose={() => this.store.hideModal()}
             isVisible
         />}
         </React.Fragment>
     };
 }
 
-export default observer(Index);
+export default connect(mapStateToProps, mapDispatchToProps)(Index);
