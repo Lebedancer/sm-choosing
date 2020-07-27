@@ -24,19 +24,40 @@ class Index extends React.Component<any> {
     }
 
     renderContent() {
-        const { data: {boardName} } = this.props;
+        const { data: {boardName} } = this.props; // ? should we proxy all data through MV
 
         return <React.Fragment>
                 <a href="#grid">
                     <h1>Miro</h1>
                 </a>
-                <button onClick={() => {}}>
+                <button onClick={this.showShareModal}>
                     <h1>{boardName}</h1>
                 </button>
                 {canShowShareButton && <Button
-                    onClick={() => {}}
+                    onClick={this.showTitleDialogModal}
                 >Share</Button>}
         </React.Fragment>
+    }
+
+    hideModal = () => {
+        this.setState({ // Transfer this to redux store?
+            isTitleDialogVisible: false,
+            isShareDialogVisible: false
+        })
+    }
+
+    showShareModal = () => {
+        this.setState({ // Transfer this to redux store?
+            isTitleDialogVisible: false,
+            isShareDialogVisible: true
+        })
+    }
+
+    showTitleDialogModal = () => {
+        this.setState({ // Transfer this to redux store?
+            isTitleDialogVisible: true,
+            isShareDialogVisible: false
+        })
     }
 
     render() {
@@ -48,13 +69,11 @@ class Index extends React.Component<any> {
                 {isLoading ? 'loading' : this.renderContent()}
             </div>
             {isTitleDialogVisible && <BoardTitleModal
-                // onClose={() => this.store.hideModal()}
-                onClose={() => {}}
+                onClose={this.hideModal}
                 isVisible
             />}
             {isShareDialogVisible && <ShareModal
-            onClose={() => {}}
-            // onClose={() => this.store.hideModal()}
+            onClose={this.hideModal}
             isVisible
         />}
         </React.Fragment>
