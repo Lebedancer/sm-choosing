@@ -83,6 +83,7 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
+    "dep:graph": "npx madge --image graph.svg --warning src/",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
@@ -158,5 +159,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "madge": "^3.9.2"
   }
 }

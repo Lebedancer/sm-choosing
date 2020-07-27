@@ -1,0 +1,5 @@
+{
+	"excludeRegExp": [".(scss|css)$"],
+	"tsConfig": "tsconfig.json",
+	"fileExtensions": ["ts", "tsx", "js"]
+}
