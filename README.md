@@ -5,6 +5,7 @@
 or
 * **npm run server / yarn server** - to launch a rest server
 * **npm run start / yarn start** - to launch app in watch mode
+* **npm run dep:graph** - to create `graph.svg` image with dependencies overview
 
 ### Why this app exists?
 This app shows the way to work with mobX. 
