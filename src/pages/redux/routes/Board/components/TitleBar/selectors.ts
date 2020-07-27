@@ -16,3 +16,10 @@ export const canShowShareButton = createSelector(
     }
 );
 
+export const getBoardData = createSelector(
+    (state: any) => state.boardInfo,
+    (boardInfo) => {
+        return boardInfo.status !== status.Loading && boardInfo.data
+    }
+);
+

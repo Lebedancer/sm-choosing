@@ -6,6 +6,11 @@ import ShareModal from "../../../../../../components/modals/ShareModal";
 import { isLoading, canShowShareButton } from "./selectors";
 import {connect} from "react-redux";
 
+type TitleBarState = {
+    isTitleDialogVisible: boolean,
+    isShareDialogVisible: boolean
+}
+
 const mapStateToProps = (state: any) => {
     return {
         isLoading: isLoading(state),
@@ -17,14 +22,14 @@ const mapStateToProps = (state: any) => {
 const mapDispatchToProps = (dispatch: any) => ({
 });
 
-class Index extends React.Component<any> {
+class Index extends React.Component<any, TitleBarState> {
     state = {
         isTitleDialogVisible: false,
         isShareDialogVisible: false,
     }
 
     renderContent() {
-        const { data: {boardName} } = this.props; // ? should we proxy all data through MV
+        const { boardName } = this.props; // ? should we proxy all data through MV
 
         return <React.Fragment>
                 <a href="#grid">
@@ -61,7 +66,7 @@ class Index extends React.Component<any> {
     }
 
     render() {
-        const { isLoading } = this.props;
+        const { isLoading, boardName } = this.props;
         const { isTitleDialogVisible, isShareDialogVisible } = this.state;
 
         return <React.Fragment>
@@ -70,7 +75,11 @@ class Index extends React.Component<any> {
             </div>
             {isTitleDialogVisible && <BoardTitleModal
                 onClose={this.hideModal}
+                onDelete={() => {}}
+                onDuplicate={() => {}}
+                onChangeTitle={() => {}}
                 isVisible
+                title={boardName}
             />}
             {isShareDialogVisible && <ShareModal
             onClose={this.hideModal}
