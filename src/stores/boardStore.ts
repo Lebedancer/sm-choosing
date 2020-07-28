@@ -2,10 +2,10 @@ import { observable, action, computed } from 'mobx';
 import { getData } from '../services/accessRulesService';
 import { deleteBoard, loadBoard } from '../services/boardService';
 
-class BoardStore {
+export class BoardStore {
   @observable public boardName: string = ''
   @observable public boardId: number = 0;
-  @observable public loading: boolean = true;
+  @observable public loading: boolean = false;
 
   constructor() {
       this.loading = true;

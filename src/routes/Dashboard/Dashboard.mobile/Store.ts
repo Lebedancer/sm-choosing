@@ -9,7 +9,7 @@ export interface IStore {
 }
 export class Store implements IStore{
   @observable list = dashboardStore.list;
-  @observable loading = dashboardStore.loading;
+  @computed loading = dashboardStore.loading;
 
   constructor() {
     this.initObservers()

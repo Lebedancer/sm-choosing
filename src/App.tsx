@@ -4,6 +4,11 @@ import Board from './routes/Board';
 import Dashboard from './routes/Dashboard';
 import testSpace from './routes/testSpace';
 import style from './style.module.scss';
+import { initBoardLogger, initDashboardLogger } from './services/logger';
+import { Store, DashboardStoreContext } from './routes/Dashboard/Store';
+
+initBoardLogger()
+initDashboardLogger()
 
 class App extends React.Component<any> {
     render() {
@@ -15,7 +20,9 @@ class App extends React.Component<any> {
             </section>
             <Switch>
                 <Route path="/" component={Board} exact/>
-                <Route path="/Dashboard" component={Dashboard}/>
+				<DashboardStoreContext.Provider value={new Store()}>
+					<Route path="/Dashboard" component={Dashboard}/>
+				</DashboardStoreContext.Provider>
                 <Route path="/test" component={testSpace}/>
             </Switch>
         </div>
@@ -23,5 +30,3 @@ class App extends React.Component<any> {
 }
 
 export default withRouter(App);
-
-

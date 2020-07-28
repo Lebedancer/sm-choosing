@@ -1,3 +1,4 @@
+import React from 'react';
 import { observable, action, computed, observe } from 'mobx';
 
 export interface IStore {
@@ -23,5 +24,7 @@ export class Store implements IStore{
     }
   }
 }
+
+export const DashboardStoreContext = React.createContext(new Store())
 
 export default Store;
