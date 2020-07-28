@@ -6,6 +6,7 @@ import reducer from './reducer';
 import createSagaMiddleware from 'redux-saga'
 import boardInfoSaga from './sagas/boadInfoSaga'
 import accessRulesSaga from './sagas/accessRulesSaga'
+import { composeWithDevTools } from 'redux-devtools-extension';
 // import { combineReducers } from 'redux';
 
 // import { routerMiddleware } from 'react-router-redux'
@@ -71,7 +72,8 @@ const initialStore = {
 
 function configureStore(initialState: any) {
     // Add sagas middleware
-    const store: any = createStore(reducer(), initialState, applyMiddleware(sagaMiddleware));
+
+    const store: any = createStore(reducer(), initialState, composeWithDevTools(applyMiddleware(sagaMiddleware)));
     // Add injectSaga method to our store
 
     store.asyncReducers = {}
