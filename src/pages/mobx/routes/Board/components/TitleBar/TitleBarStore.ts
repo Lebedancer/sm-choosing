@@ -14,11 +14,6 @@ class TitleBarStore {
     @observable public isTitleDialogVisible = false;
     @observable public isShareDialogVisible = false;
 
-    // private loadingObj: LoadingObj = {
-    //     isBoardDataLoading: true,
-    //     isAccessRulesLoading: true,
-    // };
-
     constructor() {
         this.initObservers()
     }

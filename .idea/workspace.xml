@@ -11,29 +11,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4503f4ed-e211-45e2-8ee6-916b18e39ba8" name="Default Changelist" comment="clean up code for dashboard">
-      <change afterPath="$PROJECT_DIR$/src/enums/StatusEnum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/actions/accessRulesActionCreators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/actions/boardInfoActionCreators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/actions/types/accessRulesTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/actions/types/boardInfoTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/reducers/accessRulesReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/reducers/boardInfoReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/TitleBar/selectors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/lazy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/DashBoard/Dashboard.web/actions/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/sagas/accessRulesSaga.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/sagas/boadInfoSaga.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/BoardTitleModal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/BoardTitleModal/style.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redux/AppRedux.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/AppRedux.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/BoardTitleModal/BoardTitleStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/BoardTitleModal/BoardTitleStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/BoardTitleModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/BoardTitleModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/BoardTitleModal/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/BoardTitleModal/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/DeleteModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/DeleteModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/DuplicateModal/Store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/DuplicateModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/DuplicateModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/ShareModal/Store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/ShareModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/ShareModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/TitleBar/TitleBarStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/TitleBar/TitleBarStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/TitleBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/TitleBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/stores/boardStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/stores/boardStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/redux/actions/boardInfoActionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/actions/boardInfoActionCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/redux/actions/types/boardInfoTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/actions/types/boardInfoTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/redux/reducers/boardInfoReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/reducers/boardInfoReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/TitleBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/TitleBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redux/routes/Board/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redux/routes/DashBoard/Dashboard.web/lazy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/routes/DashBoard/Dashboard.web/lazy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redux/routes/DashBoard/Dashboard.web/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/routes/DashBoard/Dashboard.web/sagas.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redux/routes/DashBoard/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redux/store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/store.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/TitleBar/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/routes/Board/components/TitleBar/selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/redux/sagas/boadInfoSaga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redux/sagas/boadInfoSaga.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/boardService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/boardService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,9 @@
   <component name="GitRewordedCommitMessages">
     <option name="onto" value="9e868189b7690242a10dab514cdc7bef92b179af" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response3.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="1eUBwmkLNcxgenOw6AnLdlLigtb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
@@ -77,7 +80,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/redux/sagas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/redux/routes/Board/components/BoardTitleModal" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -89,13 +92,6 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages/redux/sagas" />
-      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/actions" />
-      <recent name="$PROJECT_DIR$/src/pages/redux/actions" />
-      <recent name="$PROJECT_DIR$/src/pages/redux/reducers" />
-      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/redux/actions/types" />
       <recent name="$PROJECT_DIR$/src/pages/redux" />
@@ -103,6 +99,39 @@
       <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/components" />
       <recent name="$PROJECT_DIR$/src/pages/mobx/routes/Board/components" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/components/BoardTitleModal" />
+      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/components" />
+      <recent name="$PROJECT_DIR$/src/pages/mobx/routes/Board/components" />
+      <recent name="$PROJECT_DIR$/src/pages/redux/sagas" />
+      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/actions" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3001" />
+          <option name="urlPath" value="/boardInfo/changeTitle" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -348,10 +377,10 @@
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="2713" y="500" key="MultipleFileMergeDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313650551" />
-    <state x="2833" y="441" key="RollbackChangesDialog" timestamp="1595232921957">
+    <state x="2833" y="441" key="RollbackChangesDialog" timestamp="1595856036969">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
-    <state x="2833" y="441" key="RollbackChangesDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595232921957" />
+    <state x="2833" y="441" key="RollbackChangesDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595856036969" />
     <state x="2581" y="370" key="SettingsEditor" timestamp="1594984662177">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
@@ -372,10 +401,10 @@
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="2875" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595237819244" />
-    <state x="2779" y="486" width="586" height="490" key="find.popup" timestamp="1595840948843">
+    <state x="2779" y="486" width="586" height="490" key="find.popup" timestamp="1595920132789">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
-    <state x="2779" y="486" width="586" height="490" key="find.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595840948843" />
+    <state x="2779" y="486" width="586" height="490" key="find.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595920132789" />
     <state x="2840" y="451" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595238858950">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
@@ -388,9 +417,9 @@
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="2877" y="651" key="git4idea.rebase.GitUnstructuredEditor/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313652102" />
-    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1595596281718">
+    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1595918835005">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
-    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595596281718" />
+    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595918835005" />
   </component>
 </project>

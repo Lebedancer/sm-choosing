@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "../../../../../../components/Button";
 import "./style.css"
-import BoardTitleModal from "../../../../../../components/modals/BoardTitleModal";
+import BoardTitleModal from "../BoardTitleModal";
 import ShareModal from "../../../../../../components/modals/ShareModal";
-import { isLoading, canShowShareButton } from "./selectors";
+import { isLoading, canShowShareButton, getBoardBoardTitle } from "./selectors";
+import { changeTitle } from "../../../../actions/boardInfoActionCreators";
 import {connect} from "react-redux";
 
 type TitleBarState = {
@@ -15,11 +16,15 @@ const mapStateToProps = (state: any) => {
     return {
         isLoading: isLoading(state),
         canShowShareButton: canShowShareButton(state),
-        ...state.boardInfo
+        boardTitle: getBoardBoardTitle(state),
+        // ...state.boardInfo // could be problems with overwrite
     };
 }
 
 const mapDispatchToProps = (dispatch: any) => ({
+    changeTitle: (title: string) => {
+        dispatch(changeTitle(title));
+    }
 });
 
 class Index extends React.Component<any, TitleBarState> {
@@ -29,17 +34,17 @@ class Index extends React.Component<any, TitleBarState> {
     }
 
     renderContent() {
-        const { boardName } = this.props; // ? should we proxy all data through MV
+        const { boardTitle } = this.props; // ? should we proxy all data through MV
 
         return <React.Fragment>
                 <a href="#grid">
                     <h1>Miro</h1>
                 </a>
-                <button onClick={this.showShareModal}>
-                    <h1>{boardName}</h1>
+                <button onClick={this.showTitleDialogModal}>
+                    <h1>{boardTitle}</h1>
                 </button>
                 {canShowShareButton && <Button
-                    onClick={this.showTitleDialogModal}
+                    onClick={this.showShareModal}
                 >Share</Button>}
         </React.Fragment>
     }
@@ -65,8 +70,14 @@ class Index extends React.Component<any, TitleBarState> {
         })
     }
 
+    onChangeTitle = (title: string) => {
+        const { changeTitle } = this.props;
+
+        changeTitle(title)
+    }
+
     render() {
-        const { isLoading, boardName } = this.props;
+        const { isLoading, boardTitle } = this.props;
         const { isTitleDialogVisible, isShareDialogVisible } = this.state;
 
         return <React.Fragment>
@@ -77,9 +88,9 @@ class Index extends React.Component<any, TitleBarState> {
                 onClose={this.hideModal}
                 onDelete={() => {}}
                 onDuplicate={() => {}}
-                onChangeTitle={() => {}}
+                onChangeTitle={this.onChangeTitle}
                 isVisible
-                title={boardName}
+                title={boardTitle}
             />}
             {isShareDialogVisible && <ShareModal
             onClose={this.hideModal}

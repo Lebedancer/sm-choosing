@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
-import Modal from "../../Modal";
-import Input from "../../Input";
-import Button from "../../Button";
+import Modal from "../../../../../../components/Modal";
+import Input from "../../../../../../components/Input";
+import Button from "../../../../../../components/Button";
 import {observer} from "mobx-react";
 import Store from "./BoardTitleStore";
 import style from "./style.module.scss";
@@ -10,8 +10,8 @@ type CardProps = {
     onClose: () => void,
     isVisible: boolean
 }
-const DeleteModal = React.lazy(() => import('../DeleteModal'));
-const DuplicateModal = React.lazy(() => import('../DuplicateModal'));
+const DeleteModal = React.lazy(() => import('../../../../../../components/modals/DeleteModal'));
+const DuplicateModal = React.lazy(() => import('../../../../../../components/modals/DuplicateModal'));
 
 class BoardTitleModal extends React.Component<CardProps> {
     private store: any;
@@ -32,15 +32,22 @@ class BoardTitleModal extends React.Component<CardProps> {
         return <Suspense fallback={<div>Loading...</div>}>
             <DuplicateModal
                 isVisible
+                title=""
                 onClose={() => this.store.hideDeleteDialog()}
                 onSubmit={() => {}}
+
             />
         </Suspense>
     }
 
     renderDeleteDialog() {
         return <Suspense fallback={<div>Loading...</div>}>
-            <DeleteModal isVisible onClose={() => this.store.hideDeleteDialog()}/>
+            <DeleteModal
+                isVisible
+                onClose={() => this.store.hideDeleteDialog()}
+                isLoading={false}
+                onSubmit={() => {}}
+            />
         </Suspense>
     }
 

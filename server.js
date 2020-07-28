@@ -16,6 +16,11 @@ app.get('/boardInfo', (req, res) => {
     }), 2000)
 });
 
+app.post('/boardInfo/changeTitle', (req, res) => {
+    setTimeout(() => res.sendStatus(200), 2000)
+});
+
+
 app.get('/userData', (req, res) => {
     setTimeout(() => res.json({
         userId: 12,

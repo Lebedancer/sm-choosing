@@ -1,5 +1,4 @@
 import { observable, action, computed } from 'mobx';
-import { getData } from '../../../services/accessRulesService';
 import { deleteBoard, loadBoard } from '../../../services/boardService';
 
 class BoardStore {

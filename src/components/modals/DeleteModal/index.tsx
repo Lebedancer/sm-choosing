@@ -2,24 +2,16 @@ import React from "react";
 import Modal from "../../Modal";
 import Button from "../../Button";
 import {observer} from "mobx-react";
-import Store from "./Store";
 import style from "./style.module.scss";
 
-const store = new Store();
-
-type CardProps = {
+type Props = {
     onClose: () => void,
+    onSubmit: () => void,
     isVisible: boolean
+    isLoading: boolean
 }
 
-function DeleteModal({ onClose, isVisible}: CardProps) {
-    const { deleting } = store
-
-    const onDelete = () => {
-        store.onDelete()
-            .then(() => onClose())
-    }
-
+function DeleteModal({ onClose, isVisible, isLoading, onSubmit}: Props) {
     return <Modal
         onClose={onClose}
         isVisible={isVisible}
@@ -28,7 +20,7 @@ function DeleteModal({ onClose, isVisible}: CardProps) {
         <p>You have bla-blabla</p>
 
         <section className={style.buttonsBar}>
-            <Button isLoading={deleting} onClick={onDelete}>Delete</Button>
+            <Button isLoading={isLoading} onClick={() => onSubmit()}>Delete</Button>
             <Button onClick={onClose}>Cancel</Button>
         </section>
     </Modal>

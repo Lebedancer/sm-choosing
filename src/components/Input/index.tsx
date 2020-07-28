@@ -8,22 +8,44 @@ type Props = {
     value?: any
     className?: string
     onChange: (e: string) => void
-    onBlur?: () => void
 
 }
 
-class Index extends React.Component<Props> {
-    onBlur() {
-        const { onBlur } = this.props;
-        onBlur && onBlur()
+type State = {
+    value: string
+}
+
+class Index extends React.Component<Props, State> {
+
+    constructor(props: Props) {
+        super(props);
+
+        this.state = {
+            value: props.value
+        }
+    }
+
+    onChangeValue = (value: string) => {
+        this.setState({
+            value
+        })
+    }
+
+    onBlur = () => {
+        const { value } = this.state;
+        const { onChange } = this.props;
+
+        onChange(value)
     }
 
     render() {
-        const { value, className, onChange } = this.props;
+        const {  className } = this.props;
+        const { value } = this.state;
+
         return <input
             type="text"
             value={value}
-            onChange={(e) => onChange(e.target.value)}
+            onChange={(e) => this.onChangeValue(e.target.value)}
             onBlur={this.onBlur}
             className={cn('input', className)}
         />

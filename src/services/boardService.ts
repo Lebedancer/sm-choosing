@@ -6,6 +6,10 @@ export const loadBoard = (): Promise<BoardData> => {
         .then(resp => resp.data)
 }
 
+export const changeTitle = (title: string) => {
+    return axios.post('http://localhost:3001/boardInfo/changeTitle', {title} )
+}
+
 export const deleteBoard = function (id: number) {
     return axios.post('http://localhost:3001/board/delete', {id})
 }

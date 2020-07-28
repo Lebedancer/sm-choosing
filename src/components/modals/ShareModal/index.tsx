@@ -1,19 +1,13 @@
 import React from "react";
 import Modal from "../../Modal";
-import Input from "../../Input";
-import Button from "../../Button";
 import {observer} from "mobx-react";
-import Store from "./Store";
-import style from "./style.module.scss";
 
-type CardProps = {
+type Props = {
     onClose: () => void,
     isVisible: boolean
 }
 
-const store = new Store();
-
-function BoardTitleModal({ onClose, isVisible}: CardProps) {
+function BoardTitleModal({ onClose, isVisible}: Props) {
 
     return <Modal
         onClose={onClose}

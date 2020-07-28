@@ -3,7 +3,7 @@ import Button from "../../../../../../components/Button";
 import TitleBarStore from "./TitleBarStore";
 import {observer} from "mobx-react";
 import "./style.css"
-import BoardTitleModal from "../../../../../../components/modals/BoardTitleModal";
+import BoardTitleModal from "../BoardTitleModal";
 import ShareModal from "../../../../../../components/modals/ShareModal";
 
 class Index extends React.Component<any> {

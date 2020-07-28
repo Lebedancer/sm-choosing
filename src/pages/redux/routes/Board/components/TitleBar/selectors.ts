@@ -23,3 +23,10 @@ export const getBoardData = createSelector(
     }
 );
 
+export const getBoardBoardTitle = createSelector(
+    (state: any) => state.boardInfo,
+    (boardInfo) => {
+        return boardInfo?.data?.boardName
+    }
+);
+

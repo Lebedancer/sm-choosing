@@ -3,36 +3,25 @@ import Modal from "../../Modal";
 import Input from "../../Input";
 import Button from "../../Button";
 import {observer} from "mobx-react";
-import Store from "./Store";
 import style from "./style.module.scss";
 
-type CardProps = {
+type Props = {
     onClose: () => void,
     isVisible: boolean,
+    title: string,
     onSubmit: () => void,
 }
 
-function BoardTitleModal({ onClose, isVisible, onSubmit}: CardProps) {
-    const store = new Store();
-    const { title } = store;
-
-    function onClickSubmit() {
-        onSubmit();
-    }
-
-    function onCloseModal() {
-        onClose()
-    }
-
+function BoardTitleModal({ onClose, isVisible, title, onSubmit}: Props) {
     return <Modal
-        onClose={onCloseModal}
+        onClose={() => onClose()}
         isVisible={isVisible}
     >
         <h1>Copy board in account</h1>
         <Input value={title} onChange={() => {}} />
         <section className={style.buttonsBar}>
-            <Button onClick={onClickSubmit}>Duplicate</Button>
-            <Button onClick={onClose}>Cancel</Button>
+            <Button onClick={() => onSubmit()}>Duplicate</Button>
+            <Button onClick={() => onClose()}>Cancel</Button>
         </section>
     </Modal>
 }
