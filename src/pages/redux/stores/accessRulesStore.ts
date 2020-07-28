@@ -1,20 +1,16 @@
 import { observable, action, computed } from 'mobx';
 import { getData } from '../../../services/accessRulesService';
 
-class AccessRulesStore {
+class BoardStore {
     @observable public loading: boolean = true;
     @observable public canShowShareButton: boolean = true;
 
     constructor() {
         getData()
             .then(({ canShowShareButton}) => {
-                this.setRules({ canShowShareButton })
+                this.canShowShareButton = canShowShareButton
             })
-    }
-
-    @action setRules({ canShowShareButton }: {canShowShareButton: boolean}) {
-        this.canShowShareButton = canShowShareButton
     }
 }
 
-export default new AccessRulesStore();
+export default new BoardStore();

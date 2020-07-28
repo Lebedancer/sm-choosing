@@ -51,10 +51,13 @@ class BoardTitleModal extends React.Component<CardProps> {
         </Suspense>
     }
 
+    onChangeTitle = (val: string) => {
+        this.store.onChangeTitle(val)
+    }
+
     renderOwnView() {
         let {isVisible} = this.props;
         const {title} = this.store;
-
 
         return <Modal
             onClose={this.onCloseModal}
@@ -63,7 +66,7 @@ class BoardTitleModal extends React.Component<CardProps> {
             <section>
                 <Input
                     value={title}
-                    onChange={(val: string) => this.store.onChangeTitle(val)}
+                    onChange={(val: string) => this.onChangeTitle(val)}
                 />
             </section>
             <section className={style.buttonsBar}>

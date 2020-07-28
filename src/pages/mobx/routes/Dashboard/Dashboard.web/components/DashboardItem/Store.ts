@@ -27,6 +27,10 @@ export class Store implements IStore {
     @observable isListLoading = false;
 
     constructor({boardName, boardId}: IProps) {
+        this.setDefaultValues({ boardName, boardId });
+    }
+
+    @action setDefaultValues({ boardName, boardId }: { boardName: string, boardId: number }) {
         this.boardName = boardName;
         this.boardId = boardId;
     }

@@ -2,7 +2,7 @@ import { observable, action, computed, observe } from 'mobx';
 
 let autoApdater: any;
 
-
+// test new values
 export class Store{
     @observable massData = [
         {obj: {

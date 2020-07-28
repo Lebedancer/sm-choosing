@@ -4,8 +4,13 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
 import { initMobxSpy } from './helpers/tracer';
+import { configure } from 'mobx';
 
 // initMobxSpy() // whole project
+
+configure({
+    enforceActions: "observed"
+});
 
 ReactDOM.render(
   // <React.StrictMode>

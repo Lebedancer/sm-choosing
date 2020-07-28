@@ -1,7 +1,7 @@
 import {observable, action, computed} from 'mobx';
 import {getData} from '../../../services/userService';
 
-class UserStore {
+class BoardStore {
     @observable public loading: boolean = true;
     @observable public userId: number = -1;
     @observable public userName: string = '';
@@ -9,13 +9,10 @@ class UserStore {
     constructor() {
         getData()
             .then(({userId, userName}) => {
-                this.onLoadData({userId, userName});
+                this.loading = false
+                this.userName = userName
+                this.userId = userId
             })
-    }
-    @action onLoadData({userId, userName}: {userId: number, userName: string}) {
-        this.loading = false
-        this.userName = userName
-        this.userId = userId
     }
 
     @action
@@ -31,4 +28,4 @@ class UserStore {
     }
 }
 
-export default new UserStore();
+export default new BoardStore();

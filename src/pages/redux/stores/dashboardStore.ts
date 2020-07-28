@@ -9,14 +9,11 @@ class Dashboard {
   constructor() {
       getData()
           .then(list => {
-            this.onLoadData({ list });
+              this.list = list
+              this.loading = false;
           })
   }
 
-  @action onLoadData({ list }: any) {
-      this.list = list
-      this.loading = false;
-  }
 }
 
 export default new Dashboard();

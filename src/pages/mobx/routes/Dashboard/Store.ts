@@ -13,7 +13,7 @@ export class Store implements IStore{
     this.choosePlatform()
   }
 
-  choosePlatform() {
+  @action choosePlatform() {
     const isWeb = true;
 
     if (isWeb) {
