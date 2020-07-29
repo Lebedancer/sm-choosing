@@ -10,7 +10,9 @@ class Index extends React.Component<any> {
     constructor(props: any) {
         super(props);
 
-        this.store = new Store();
+        this.store = new Store({
+            dashboardStore: props.stores.dashboardStore
+        });
     }
 
     renderList() {

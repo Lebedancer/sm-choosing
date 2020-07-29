@@ -10,23 +10,54 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4503f4ed-e211-45e2-8ee6-916b18e39ba8" name="Default Changelist" comment="remove unused stores in redux folder">
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/stores/accessRulesStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/stores/boardStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/stores/dashboardStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redux/stores/userStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_07_2020,_12_54_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_07_2020__12_54__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="4503f4ed-e211-45e2-8ee6-916b18e39ba8" name="Default Changelist" comment="all interaction with store only from @actions">
+      <change afterPath="$PROJECT_DIR$/src/pages/mobx/context.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/mobx/helpers/storeManager.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/precache-manifest.f0398d141c1301ea51d0c289fbd2cfc1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/3.e55e4b65.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/3.e55e4b65.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/4.6ae78af2.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/4.6ae78af2.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/5.4b28ccbf.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/5.4b28ccbf.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/6.9f33c93b.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/6.9f33c93b.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/main.d6506f92.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/css/main.d6506f92.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/2.8a8f26ae.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/2.8a8f26ae.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/2.8a8f26ae.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/3.ad0c9c91.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/3.ad0c9c91.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/4.f6f7fba6.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/4.f6f7fba6.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/5.22e02f99.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/5.22e02f99.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/6.3d941473.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/6.3d941473.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/main.34b80c54.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/main.34b80c54.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/runtime-main.513008d8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/runtime-main.513008d8.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/BoardTitleModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/components/BoardTitleModal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/components/DashboardItem/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/components/DashboardItem/Store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/AppMobx.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/AppMobx.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Board/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Board/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.mobile/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.mobile/Store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.mobile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.mobile/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/Store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Dashboard.web/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/Store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/components/DeepDataTest/Store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/testSpace/components/DeepDataTest/Store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mobx/stores/accessRulesStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/stores/accessRulesStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mobx/stores/boardStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/stores/boardStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/routes/Dashboard/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/mobx/stores/dashboardStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/stores/dashboardStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mobx/stores/userStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mobx/stores/userStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,19 +113,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages/redux/actions/types" />
-      <recent name="$PROJECT_DIR$/src/pages/redux" />
-      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/actions" />
-      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/components" />
-      <recent name="$PROJECT_DIR$/src/pages/mobx/routes/Board/components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/components/BoardTitleModal" />
       <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/components" />
       <recent name="$PROJECT_DIR$/src/pages/mobx/routes/Board/components" />
       <recent name="$PROJECT_DIR$/src/pages/redux/sagas" />
       <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/actions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/mobx" />
+      <recent name="$PROJECT_DIR$/src/pages/redux/actions/types" />
+      <recent name="$PROJECT_DIR$/src/pages/redux" />
+      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/actions" />
+      <recent name="$PROJECT_DIR$/src/pages/redux/routes/Board/components" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -143,7 +174,7 @@
       <workItem from="1594899479529" duration="39467000" />
       <workItem from="1595314882537" duration="56708000" />
       <workItem from="1595934611134" duration="60000" />
-      <workItem from="1595934703238" duration="3240000" />
+      <workItem from="1595934703238" duration="10293000" />
     </task>
     <task id="LOCAL-00001" summary="first steps">
       <created>1594623928020</created>
@@ -306,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595927695379</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="all interaction with store only from @actions">
+      <created>1595938368432</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1595938368432</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +401,8 @@
     <MESSAGE value="clean up code for dashboard" />
     <MESSAGE value="changing title from dialog" />
     <MESSAGE value="remove unused stores in redux folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unused stores in redux folder" />
+    <MESSAGE value="all interaction with store only from @actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="all interaction with store only from @actions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2827" y="540" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595505753695">
@@ -390,11 +429,11 @@
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="2713" y="500" key="MultipleFileMergeDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313650551" />
-    <state x="729" y="347" key="RollbackChangesDialog" timestamp="1595928511270">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state x="2833" y="441" key="RollbackChangesDialog" timestamp="1595940306843">
+      <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="729" y="347" key="RollbackChangesDialog/1792.23.2560.1417/0.23.1792.1097@0.23.1792.1097" timestamp="1595928511270" />
-    <state x="2833" y="441" key="RollbackChangesDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595856036969" />
+    <state x="2833" y="441" key="RollbackChangesDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595940306843" />
     <state x="2581" y="370" key="SettingsEditor" timestamp="1594984662177">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
@@ -403,11 +442,11 @@
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="2861" y="443" key="VCS.ChangeListViewerDialog/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595239983546" />
-    <state x="616" y="370" key="Vcs.Push.Dialog.v2" timestamp="1595927703504">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state x="2672" y="471" key="Vcs.Push.Dialog.v2" timestamp="1595938371498">
+      <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="616" y="370" key="Vcs.Push.Dialog.v2/1792.23.2560.1417/0.23.1792.1097@0.23.1792.1097" timestamp="1595927703504" />
-    <state x="2672" y="471" key="Vcs.Push.Dialog.v2/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595923468882" />
+    <state x="2672" y="471" key="Vcs.Push.Dialog.v2/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595938371498" />
     <state x="2695" y="349" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595431338961">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
@@ -416,10 +455,10 @@
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="2875" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595237819244" />
-    <state x="2779" y="486" width="586" height="490" key="find.popup" timestamp="1595935744419">
+    <state x="2779" y="486" width="586" height="490" key="find.popup" timestamp="1595941563152">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
-    <state x="2779" y="486" width="586" height="490" key="find.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595935744419" />
+    <state x="2779" y="486" width="586" height="490" key="find.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595941563152" />
     <state x="2840" y="451" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595238858950">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
@@ -432,10 +471,10 @@
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="2877" y="651" key="git4idea.rebase.GitUnstructuredEditor/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595313652102" />
-    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1595936151302">
+    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1595945016369">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state x="662" y="275" width="670" height="524" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1097@0.23.1792.1097" timestamp="1595928364675" />
-    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595936151302" />
+    <state x="2737" y="348" width="670" height="676" key="search.everywhere.popup/1792.23.2560.1417/0.23.1792.1097@1792.23.2560.1417" timestamp="1595945016369" />
   </component>
 </project>

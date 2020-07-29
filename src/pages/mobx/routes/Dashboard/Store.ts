@@ -14,7 +14,7 @@ export class Store implements IStore{
   }
 
   @action choosePlatform() {
-    const isWeb = true;
+    const isWeb = false;
 
     if (isWeb) {
       this.canShowWeb = true;

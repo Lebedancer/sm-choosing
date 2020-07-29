@@ -4,10 +4,21 @@ import Board from './routes/Board';
 import Dashboard from './routes/Dashboard';
 import testSpace from './routes/testSpace';
 import style from './style.module.scss';
+import StoresContext from './context';
+import DashboardStore from './stores/dashboardStore';
+import { addStore } from './helpers/storeManager';
+
+const dashboardStore = new DashboardStore();
+const stores = {
+    dashboardStore
+}
+
+addStore('dashboardStore', dashboardStore);
 
 class App extends React.Component<any> {
     render() {
-        return <div className={style.App}>
+        return <StoresContext.Provider value={stores}>
+        <div className={style.App}>
             <section className={style.nav}>
                 <a href="/">main</a>
                 <a href="/mobx/">board</a>
@@ -20,6 +31,7 @@ class App extends React.Component<any> {
                 <Route path="/mobx/test" component={testSpace}/>
             </Switch>
         </div>
+        </StoresContext.Provider>
     };
 }
 

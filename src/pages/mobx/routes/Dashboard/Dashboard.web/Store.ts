@@ -1,33 +1,25 @@
 import { observable, action, computed, observe } from 'mobx';
-import dashboardStore from '../../../stores/dashboardStore';
 import {BoardData} from "../../../../../types/BoardTypes";
 
 export interface IStore {
   list: BoardData[]
   loading: boolean
 }
-export class Store implements IStore{
-  @observable list = dashboardStore.list;
-  @observable loading = dashboardStore.loading;
 
-  constructor() {
-    this.initObservers()
+export class Store implements IStore{
+  private dashboardStore: any;
+
+  constructor({ dashboardStore }: any) {
+    debugger
+      this.dashboardStore = dashboardStore;
   }
 
-  initObservers() {
-    observe(dashboardStore, (change) => {
-      if (change.type === "update") {
-        const {name, newValue} = change;
+  @computed get loading() {
+      return this.dashboardStore.loading;
+  }
 
-        if (name === 'list') {
-          this.list = newValue
-        }
-
-        if (name === 'loading') {
-          this.loading = newValue
-        }
-      }
-    })
+  @computed get list() {
+    return this.dashboardStore.list;
   }
 }
 

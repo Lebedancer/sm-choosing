@@ -5,6 +5,8 @@ import { observer } from "mobx-react";
 
 class Index extends React.Component<any> {
     render() {
+        let value = this.context;
+        debugger
         return <div className="board">
             <Header />
             <Canvas />

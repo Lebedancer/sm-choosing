@@ -9,7 +9,7 @@ import { configure } from 'mobx';
 // initMobxSpy() // whole project
 
 configure({
-    enforceActions: "observed"
+    enforceActions: "strict"
 });
 
 ReactDOM.render(
