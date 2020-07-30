@@ -10,7 +10,6 @@ export class Store implements IStore{
   private dashboardStore: any;
 
   constructor({ dashboardStore }: any) {
-    debugger
       this.dashboardStore = dashboardStore;
   }
 

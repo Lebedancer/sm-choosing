@@ -2,6 +2,7 @@ import { applyMiddleware, createStore } from 'redux';
 // import { createLogger } from 'redux-logger'
 // import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 // import { promiseMiddleware, localStorageMiddleware } from './middleware';
+import { canvasActionsMiddleware } from './middleware';
 import reducer from './reducer';
 import createSagaMiddleware from 'redux-saga'
 import boardInfoSaga from './sagas/boadInfoSaga'
@@ -73,7 +74,7 @@ const initialStore = {
 function configureStore(initialState: any) {
     // Add sagas middleware
 
-    const store: any = createStore(reducer(), initialState, composeWithDevTools(applyMiddleware(sagaMiddleware)));
+    const store: any = createStore(reducer(), initialState, composeWithDevTools(applyMiddleware(sagaMiddleware, canvasActionsMiddleware)));
     // Add injectSaga method to our store
 
     store.asyncReducers = {}

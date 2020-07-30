@@ -65,4 +65,10 @@
 // }
 //
 //
+
+const canvasActionsMiddleware = store => next => action => {
+  next(action);
+};
+
 // export { promiseMiddleware, localStorageMiddleware }
+export { canvasActionsMiddleware }

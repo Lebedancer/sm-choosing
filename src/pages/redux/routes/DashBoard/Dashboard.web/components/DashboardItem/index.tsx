@@ -1,28 +1,22 @@
 import React, { Fragment } from "react";
 import style from "./style.module.scss";
 import Actions from "../../../../../../../components/Actions";
-import Store, { IStore } from "./Store";
 import {observer} from "mobx-react";
+import { ListItem } from "../../../../../../../types/CommonTypes";
 
 interface Iprops {
     boardName: string
     boardId: number
+    actionsList: ListItem[]
+    isListLoading: true
 }
 
 class Index extends React.Component<Iprops> {
-    public store: IStore;
-
-    constructor(props: any) {
-        super(props);
-
-        this.store = new Store(props);
-    }
-
     renderActionsSection() {
-        const { actionsList, isListLoading } = this.store;
+        const { actionsList, isListLoading } = this.props;
 
         return <Actions
-            onClick={() => this.store.loadList()}
+            onClick={() => {}}
             className={style.actions}
             isLoading={isListLoading}
             data={actionsList}
@@ -30,7 +24,7 @@ class Index extends React.Component<Iprops> {
     }
 
     renderContent() {
-        const { boardName } = this.store;
+        const { boardName } = this.props;
 
         return <Fragment>
             <div className={style.image}/>
