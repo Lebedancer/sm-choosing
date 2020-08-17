@@ -11,18 +11,9 @@ const mapDispatchToProps = (dispatch: any) => ({
 });
 
 class DashboardWeb extends React.Component<any> {
-    // UI state here
-    public static defaultProps = {
-        loading: true
-    }
-
-    constructor(props: any) {
-        super(props);
-    }
-
     renderList() {
         const {data, loading} = this.props;
-
+            debugger
         if (loading) {
             return <div>Loading....</div>
         }
